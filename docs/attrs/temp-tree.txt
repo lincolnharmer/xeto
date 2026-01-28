@@ -1,0 +1,23 @@
+## Inheritance Tree
+
+AirTempAttr (abstract) [air]
+├── AirDesignTempAttr (abstract) [design]
+│   └── AirDischargeDesignTempAttr [discharge]
+└── AirOperatingTempAttr (abstract) [operating]
+    └── AirRatedOperatingTempAttr (abstract) [rated]
+        ├── AirMaxRatedOperatingTempAttr [max]
+        └── AirMinRatedOperatingTempAttr [min]
+
+WaterTempAttr (abstract) [water]
+├── WaterDesignTempAttr (abstract) [design]
+│   ├── WaterEnteringDesignTempAttr (abstract) [entering]
+│   │   ├── WaterChilledEnteringDesignTempAttr [chilled]
+│   │   └── WaterHotEnteringDesignTempAttr [hot]
+│   └── WaterLeavingDesignTempAttr (abstract) [leaving]
+│       ├── WaterChilledLeavingDesignTempAttr [chilled]
+│       └── WaterHotLeavingDesignTempAttr [hot]
+└── WaterOperatingTempAttr (abstract) [operating]
+    └── WaterRatedOperatingTempAttr (abstract) [rated]
+        ├── WaterMaxRatedOperatingTempAttr [max]
+        └── WaterMinRatedOperatingTempAttr [min]
+

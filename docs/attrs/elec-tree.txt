@@ -1,0 +1,23 @@
+## Inheritance Tree
+
+ElecCurrentAttr (abstract) [elec, current]
+└── ElecAcCurrentAttr (abstract) [ac]
+    └── ElecRatedAcCurrentAttr (abstract) [rated]
+        ├── ElecContinuousCapacityRatedAcCurrentAttr [currentContinuousCapacity]
+        ├── ElecContinuousRatedAcCurrentAttr (abstract) [currentContinuous]
+        │   └── ElecMaxContinuousRatedAcCurrentAttr [max]
+        └── ElecInputRatedAcCurrentAttr (abstract) [input]
+            └── ElecMaxInputRatedAcCurrentAttr [max]
+
+ElecVoltAttr (abstract) [elec, volt]
+└── ElecAcVoltAttr (abstract) [ac]
+    └── ElecRatedAcVoltAttr (abstract) [rated]
+        └── ElecInputRatedAcVoltAttr (abstract) [input]
+            ├── ElecMaxInputRatedAcVoltAttr (abstract) [max]
+            │   └── ElecLineToLineMaxInputRatedAcVoltAttr [voltLineToLine]
+            ├── ElecMinInputRatedAcVoltAttr (abstract) [min]
+            │   └── ElecLineToLineMinInputRatedAcVoltAttr [voltLineToLine]
+            └── ElecNominalInputRatedAcVoltAttr (abstract) [nominal]
+                ├── ElecLineToLineNominalInputRatedAcVoltAttr [voltLineToLine]
+                └── ElecLineToNeutralNominalInputRatedAcVoltAttr [voltLineToNeutral]
+

@@ -1,0 +1,15 @@
+## Inheritance Tree
+
+DateAttr (abstract)
+
+NumberAttr (abstract)
+├── EnergyAttr (abstract)
+├── LengthAttr (abstract)
+├── MassAttr (abstract)
+├── PowerAttr (abstract)
+├── PressureAttr (abstract)
+├── TempAttr (abstract)
+└── VolumetricFlowAttr (abstract)
+
+StrAttr (abstract)
+

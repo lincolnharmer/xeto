@@ -1,0 +1,15 @@
+## Inheritance Tree
+
+AirPressureAttr (abstract) [air]
+├── AirDesignPressureAttr (abstract) [design]
+│   └── AirDesignFanPressureAttr [fan]
+└── AirRatedPressureAttr (abstract) [rated]
+    └── AirRatedFanPressureAttr [fan]
+
+WaterPressureAttr (abstract) [water]
+├── WaterDesignPressureAttr (abstract) [design]
+│   ├── WaterDesignChillerPressureAttr [chiller]
+│   └── WaterDesignPumpPressureAttr [pump]
+└── WaterRatedPressureAttr (abstract) [rated]
+    └── WaterChillerMinRatedPressureAttr [chiller, min]
+

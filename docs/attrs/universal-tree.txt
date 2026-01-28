@@ -1,0 +1,20 @@
+## Inheritance Tree
+
+DimensionHeightAttr [height]
+
+DimensionLengthAttr [length]
+
+DimensionWidthAttr [width]
+
+ManufactureDateAttr [manufactureDate]
+
+ManufacturerAttr [manufacturer]
+
+ModelNumberAttr [modelNumber]
+
+ModelSeriesAttr [modelSeries]
+
+SerialNumberAttr [serialNum]
+
+WeightAttr [weight]
+
